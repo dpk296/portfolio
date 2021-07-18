@@ -1,0 +1,508 @@
+*{
+    margin: 0px;
+    padding: 0px;
+background-color: #0a192f;
+}
+.navbar{
+    position:fixed ;
+    width: 100%;
+}
+.navbar ul{
+    display: inline-flex;
+    text-decoration: none;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+
+    }
+.navbar ul li{
+    display: flex;
+    list-style: none;
+    margin: 13px;
+    padding: 5px;
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 19px;
+
+}
+.content{
+
+    padding-block-start:100px;
+
+}
+p{
+    font-size:19px;
+    line-height: 1.5;
+    max-width: 540px;
+    margin: 0px 0px 15px;
+    display: inline-flex;
+
+}
+/* .paragraph_abovephoto{
+    display: block;
+} */
+
+.email a{
+color: #64ffda;
+background-color: transparent;
+border: 1px solid #64ffda;
+border-radius: 4px;
+padding: 1.25rem 1.75rem;
+font-size: 14px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+line-height: 1;
+text-decoration: none;
+cursor: pointer;
+}
+.email{
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin-left: 10%;
+}
+.numbered_headding{
+-moz-box-align: center;
+align-items: center;
+position: relative;
+margin: 10px 0px 40px;
+width: 100%;
+font-size:30px;
+white-space: nowrap;
+display: flex;
+}
+
+
+.about img{
+
+    display: inline-flex;
+    max-width: 200px;
+    position: relative;
+    border-radius: 4px ;
+    mix-blend-mode:multiply;
+    filter: grayscale(100%) contrast(1);
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1);
+    object-fit: cover;
+    padding-left: 10%;
+    padding-top: 5%;
+    border: 2px solid #64ffda;
+    border-radius: 4px;
+
+}
+.pr img:hover{
+    mix-blend-mode:normal;
+    filter: grayscale(1%) contrast(1);
+    padding-left: 0%;
+    padding-top: 0%;
+    border: 2px solid #ccd6f6;
+    border-radius: 4px;
+    
+
+}
+
+.pr{
+    display: inline-flex;
+    background-color: #64ffda;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px 0px 10px;
+    font-weight: 900;
+    color: #ccd6f6;
+    line-height: 1.1;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+numbered-heading::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
+    font-weight: 400;
+}
+
+.numbered_headding::after{
+display: block;
+position: relative;
+top: -5px;
+width: 300px;
+height: 1px;
+margin-left: 20px;
+background-color: var(--lightest-navy);
+content: "";
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 25%;
+    /* margin: 25px 67px 0px; */
+    overflow: hidden;
+    list-style: outside none none;
+    line-height: 2.1;
+    font-size: 25px;
+    
+}
+
+.education{
+    margin-top: 150px;
+margin-left: 2%;
+}
+.highestdegree_heading ,.intermediate_heading ,.tenth_heading{
+    margin-top: 20px;
+    margin-left: 4%;
+}
+.btechdetails, .intermediate_details ,.tenth_details{
+    display: grid;
+    margin-left: 9%;
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-columns: repeat(2, minmax(10px, 500px));
+    color: #64ffda;
+}
+.btechdetails h3,.intermediate_details h3,.tenth_details h3{
+    line-height: 2.1;
+    color: #64ffda;
+
+}
+
+.project_main_headding{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    color: #64ffda;
+}
+
+.projects img{
+    width: 750px;
+    margin-left: 12%;
+    display: inline-flex;
+}
+.projects{
+    display: grid;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -moz-box-align: center;
+    align-items: center;
+
+}
+.project_tittle{
+    margin: 0px 300px 190px;
+    margin-left: 100%;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.project_descrcipction{
+    color:#ccd6f6 ;
+    background-color: #112240;
+    padding: 25px;
+    width: 400px;
+    font-size: 20px;
+}
+.project_used_softwares{
+    display: inline-block;
+    text-align: right;
+    font-size: 18px;
+    color: #64ffda;
+}
+.project_used_softwares ul{
+    
+display: inline-flex;
+text-align: right;
+width: 50%;
+}
+
+.project_used_softwares ul li{
+    text-align: right;
+    margin-right: 10%;
+padding-right: 105%;
+margin-top: 5%;
+    }
+
+    
+    .projects2 img{
+        width: 600px;
+        margin-left: 12%;
+        display: inline-flex;
+    }
+    .projects2{
+        display: grid;
+        position: relative;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(18, 1fr);
+        -moz-box-align: center;
+        align-items: center;
+        margin-top: 20%;
+    
+    }
+    .project_tittle2{
+        display: flex;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+    .project_descrcipction2{
+        color:#ccd6f6 ;
+        background-color: #112240;
+        padding: 25px;
+        width: 500px;
+        font-size: 20px;
+        padding-right: 10%;
+        margin-left: 10%;
+    }
+    .project_descrcipction2:hover{
+        color:#64ffda ;
+
+    }
+
+    .project_used_softwares2{
+        display: inline-block;
+        text-align: right;
+        font-size: 18px;
+        color: #64ffda;
+    }
+    .project_used_softwares2 ul{
+        
+    display: inline-flex;
+    text-align: right;
+    width: 50%;
+    }
+    
+    .project_used_softwares2 ul li{
+        text-align: right;
+        margin-right: 10%;
+    padding-right: 60%;
+    margin-top: 5%;
+        }
+ .project_used_softwares2 ul li:hover{
+color: azure;
+   }
+
+/* project3 */
+         
+    .projects3 img{
+        width: 600px;
+        margin-left: 12%;
+        display: inline-flex;
+    }
+    .projects3{
+        display: grid;
+        position: relative;
+        display: grid;
+        gap: 90px;
+        grid-template-columns: repeat(18, 1fr);
+        -moz-box-align: center;
+        align-items: center;
+        margin-top: 20%;
+    
+    }
+    .project_tittle3{
+        display: flex;
+        margin-left: 71%;
+        margin-bottom: 15%;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .project_descrcipction3{
+        color:#ccd6f6 ;
+        background-color: #112240;
+        padding: 25px;
+        width: 500px;
+        font-size: 20px;
+        padding-right: 10%;
+        margin-left: 10%;
+    }
+    .project_descrcipction3:hover,.project_descrcipction:hover{
+        color:#64ffda ;
+
+    }
+
+    .project_used_softwares3{
+        display: inline-block;
+        text-align: right;
+        font-size: 18px;
+        color: #64ffda;
+    }
+    .project_used_softwares3 ul{
+        
+    display: inline-flex;
+    text-align: right;
+    width: 50%;
+    }
+    
+    .project_used_softwares3 ul li{
+        text-align: right;
+        margin-right: 10%;
+    padding-right: 60%;
+    margin-top: 5%;
+        }
+ .project_used_softwares3 ul li:hover,.project_used_softwares ul li:hover {
+color: azure;
+   }
+
+/* certificates */
+.certificate_main_headding{
+    margin-top: 25%;
+    margin-left: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+         
+.certificate img{
+    width: 600px;
+    margin-left: 12%;
+    display: inline-flex;
+}
+.certificate{
+    display: grid;
+    position: relative;
+    display: grid;
+    gap: 90px;
+    grid-template-columns: repeat(18, 1fr);
+    -moz-box-align: center;
+    align-items: center;
+    margin-top: 10%;
+
+}
+.certificate_tittle{
+    display: flex;
+    margin-left: 76%;
+    margin-bottom: 15%;
+    margin-top: -29%;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.certificate_descrcipction{
+    color:#ccd6f6 ;
+    background-color: #112240;
+    padding: 25px;
+    width: 500px;
+    font-size: 20px;
+    padding-right: 10%;
+    margin-left: 10%;
+}
+.certificate_descrcipction:hover{
+    color:#64ffda ;
+
+}
+
+.certificate_used_softwares{
+    display: inline-block;
+    text-align: right;
+    font-size: 18px;
+    color: #64ffda;
+}
+.certificate_used_softwares ul{
+    
+display: inline-flex;
+text-align: right;
+width: 50%;
+}
+
+.certificate_used_softwares ul li{
+    text-align: right;
+    margin-right: 10%;
+padding-right: 60%;
+margin-top: 5%;
+    }
+    
+
+.resume_main_headding{
+    margin-left: 49%;
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+
+.resume1 a{
+    color: #64ffda;
+    background-color: #99cebf52;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 4.75rem;
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .resume1{
+        margin-top: 60px;
+        margin-bottom: 200px;
+        margin-left: 45%;
+    }
+
+    .resume1 a:hover{
+        color: #64ffda;
+    background-color: #99cebf52;
+        border: 1px solid #64ffda;
+        border-radius: 4px;
+        padding: 1.25rem 10.75rem;
+        font-size: 14px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        .resume1:hover{
+            margin-top: 60px;
+            margin-bottom: 200px;
+            margin-left: 39%;
+            
+        } 
+.contact_main_heading{
+    margin-left: 45%;
+    margin-bottom: 5%;
+}
+
+
+
+
+.gt1 a{
+    color: #64ffda;
+    background-color: #99cebf52;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 4.75rem;
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .gt1{
+        margin-top: 60px;
+        margin-bottom: 200px;
+        margin-left: 45%;
+    }
+
+    .gt1 a:hover{
+        color: #64ffda;
+    background-color: #99cebf52;
+        border: 1px solid #64ffda;
+        border-radius: 4px;
+        padding: 1.25rem 10.75rem;
+        font-size: 14px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        .gt1:hover{
+            margin-top: 60px;
+            margin-bottom: 200px;
+            margin-left: 39%;
+        }
